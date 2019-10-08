@@ -42,7 +42,7 @@ $lg-device : 1600px;
 }
 
 // width > 1200px & < 1600px
-@mixin desktop {
+@mixin lg-laptop {
   @media only screen and (min-width: #{$laptop-width}) and (max-width: #{$laptop-width - 1px}) {
     @content;
   }
