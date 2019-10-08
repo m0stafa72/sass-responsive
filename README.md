@@ -49,10 +49,10 @@ You can use the following methods for different devices
    </pre>
 #desktop
 // width > 1600px
-     <pre>
+  <pre>
      body {
         @include desktop {
              font-family: 'font';
         }
-    </pre>
+  </pre>
  }
