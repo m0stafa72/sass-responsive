@@ -1,0 +1,56 @@
+
+
+/*
+* to use responsive methods
+* =>
+    @include tablet {
+      body {...}
+    }
+ */
+$mobile-width : 480px;
+$min-tablet-width: 768px;
+$max-tablet-width: 1024px;
+$laptop-width : 1200px;
+$lg-device : 1600px;
+
+// width < 480px
+@mixin mobile {
+  @media only screen and (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+// width > 480px & < 768px
+@mixin lg-mobile {
+  @media only screen and (min-width: #{$mobile-width +1 }) and (max-width: #{$min-tablet-width - 1px}) {
+    @content;
+  }
+}
+
+// width > 768px & < 1024px
+@mixin tablet {
+  @media only screen and (min-width: #{$min-tablet-width}) and (max-width: #{$max-tablet-width - 1px}) {
+    @content;
+  }
+}
+
+// width > 1024px & < 1200px
+@mixin laptop {
+  @media only screen and (min-width: #{$max-tablet-width}) and (max-width: #{$lg-device - 1px}) {
+    @content;
+  }
+}
+
+// width > 1200px & < 1600px
+@mixin desktop {
+  @media only screen and (min-width: #{$laptop-width}) and (max-width: #{$laptop-width - 1px}) {
+    @content;
+  }
+}
+
+// width > 1600px
+@mixin desktop {
+  @media only screen and (min-width: #{$lg-device}) {
+    @content;
+  }
+}
