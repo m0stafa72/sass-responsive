@@ -1,0 +1,9 @@
+
+@import 'sass/mixins/mixins';
+
+
+  body {
+    @include tablet {
+    font-family: Aldhabi;
+  }
+}
