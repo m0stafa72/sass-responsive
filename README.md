@@ -1,6 +1,8 @@
 # sass-responsive
 You can use the following methods for different devices
+<br>
 #mobile
+<br>
 // width < 480px
 <br>
 <pre>
@@ -10,7 +12,9 @@ You can use the following methods for different devices
     }
  }
 </pre>
+
 #mini-tablet
+<br>
 // width > 480px & < 768px
 <br>
 <pre>
@@ -20,7 +24,9 @@ You can use the following methods for different devices
     }
  }
 </pre>
+
 #tablet
+<br>
 // width > 768px & < 1024px
 <pre>
  body {
@@ -29,7 +35,9 @@ You can use the following methods for different devices
     }
  }
 </pre>
+
 #mini-laptop
+<br>
 // width > 1024px & < 1200px
 <pre>
  body {
@@ -38,7 +46,9 @@ You can use the following methods for different devices
     }
  }
 </pre>
+
 #laptop
+<br>
   // width > 1200px & < 1600px
 <pre>
 body {
@@ -47,7 +57,9 @@ body {
   }
 }
 </pre>
+
 #desktop
+<br>
 // width > 1600px
 <pre>
 body {
