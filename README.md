@@ -10,12 +10,12 @@ You can use the following methods for different devices
     }
  }
 </pre>
-#lg-mobile
+#mini-tablet
 // width > 480px & < 768px
 <br>
 <pre>
  body {
-    @include lg-mobile {
+    @include mini-tablet {
          font-family: 'font';
     }
  }
@@ -29,20 +29,20 @@ You can use the following methods for different devices
     }
  }
 </pre>
-#laptop
+#mini-laptop
 // width > 1024px & < 1200px
 <pre>
  body {
-    @include laptop {
+    @include mini-laptop {
          font-family: 'font';
     }
  }
 </pre>
-#lg-laptop
+#laptop
   // width > 1200px & < 1600px
 <pre>
 body {
-  @include lg-laptop {
+  @include laptop {
        font-family: 'font';
   }
 }

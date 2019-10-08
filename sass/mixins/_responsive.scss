@@ -21,7 +21,7 @@ $lg-device : 1600px;
 }
 
 // width > 480px & < 768px
-@mixin lg-mobile {
+@mixin mini-tablet {
   @media only screen and (min-width: #{$mobile-width +1 }) and (max-width: #{$min-tablet-width - 1px}) {
     @content;
   }
@@ -35,14 +35,14 @@ $lg-device : 1600px;
 }
 
 // width > 1024px & < 1200px
-@mixin laptop {
+@mixin mini-laptop {
   @media only screen and (min-width: #{$max-tablet-width}) and (max-width: #{$lg-device - 1px}) {
     @content;
   }
 }
 
 // width > 1200px & < 1600px
-@mixin lg-laptop {
+@mixin laptop {
   @media only screen and (min-width: #{$laptop-width}) and (max-width: #{$laptop-width - 1px}) {
     @content;
   }
